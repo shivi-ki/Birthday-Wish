@@ -1,0 +1,13 @@
+.main {
+    color: black;
+    text-align: center;
+    -moz-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    text-size-adjust: inherit;
+}
+
+.app{
+
+background-color: grey;
+}
