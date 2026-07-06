@@ -1,12 +1,15 @@
 
 import './App.css'
 import Text from './components/text'
-
+import NameInput from './components/nameInput'
+import GoButton from './components/goButton'
 
 function App() {
     return (
         <div>
-            <Text />
+            <NameInput />
+            <GoButton />
+           {/* <Text /> */}
         </div>
     )
 }
