@@ -4,9 +4,9 @@ import { useEffect, useRef } from 'react';
 //import { text } from 'animejs';
 
 
-function Text() {
+function Text({ name }: { name: string }) {
 	const textRef = useRef(null);
-	const text = "HAPPY BIRTHDAY!"; 
+	const text = `HAPPY BIRTHDAY ${name.toUpperCase()}!`; 
 
 	useEffect(() => {
 		const els = textRef.current?.querySelectorAll('.balloon');

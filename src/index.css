@@ -58,6 +58,7 @@ body {
 
 .go-button {
     background-color: hotpink;
+    color: white;
     font-family: 'Copperplate Gothic' , sans-serif;
     font-size: 1.5em;
     text-align: center;
