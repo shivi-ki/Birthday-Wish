@@ -26,14 +26,21 @@ function Text({ name }: { name: string }) {
 	}, []
 	);
 	
-	return (
+    return (
+
+        <div className="background">
+            
+
 		<div className="container"ref={textRef}>
 		{text.split("").map((char, index) => (
 			<div key={index}>
 				{char === " " ? null : <div className="balloon">{char}</div>}
 			</div>
-		))}
-	</div>
+        ))}
+
+            
+            </div>
+    </div>
 
 	
 	)

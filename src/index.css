@@ -1,4 +1,10 @@
 
+* {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 @font-face {
     font-family: 'balloons';
     src: url('/fonts/balloon.ttf') format('truetype');
@@ -11,7 +17,7 @@ body {
 
 .container {
     display: flex;
-    gap: 10px;
+    gap: 10dvh;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -19,6 +25,8 @@ body {
 }
 
 .balloon {
+    display:flex;
+    flex-wrap: wrap;
     width: 60px;
     height: 80px;
     background: radial-gradient(circle at 50% 50%, #694285, #33283b);
@@ -57,18 +65,36 @@ body {
 }
 
 .go-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hotpink;
     color: white;
-    font-family: 'Copperplate Gothic' , sans-serif;
+    font-family: 'Copperplate Gothic', sans-serif;
     font-size: 1.5em;
     text-align: center;
-    text-size-adjust:auto;
+    text-size-adjust: auto;
     width: 50%;
     height: 40%;
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 30%;
+    margin-top: 10px;
     padding: 20px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hotpink;
+    margin: 20px auto;
+    height: 40px;
+    width: 100px;
+    font-family: 'Copperplate Gothic', sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-inline: auto;
 }
