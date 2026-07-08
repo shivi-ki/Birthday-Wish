@@ -16,3 +16,9 @@ In this project, some extra features I used:
 - Anime.js to animate the balloon components to move around
 
 
+Current to-do list: 
+
+- fix CSS of element to work on any device not just laptop
+
+
+
