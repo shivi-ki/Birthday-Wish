@@ -1,9 +1,4 @@
 
-* {
-    -moz-box-sizing: inherit;
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
 
 @font-face {
     font-family: 'balloons';
@@ -11,23 +6,23 @@
 }
 
 body {
-  margin: 0;
-  background-color: grey;
+    margin: 0;
+    background-color: grey;
 }
 
 .container {
     display: flex;
-    gap: 10dvh;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   
 }
 
 .balloon {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    width: 60px;
+    width: clamp(50px, 7vw, 100px);
+    aspect-ratio: 0.8;
     height: 80px;
     background: radial-gradient(circle at 50% 50%, #694285, #33283b);
     border-radius: 50% 50% 45% 45%;
@@ -35,11 +30,13 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 200%;
+    font-size: clamp(20px, 3vw, 48px);
     font-weight: bold;
     position: relative;
     box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+
 }
+
     .balloon::after {
         content: "";
         position: absolute;
@@ -53,15 +50,20 @@ body {
 
 .name-input {
     background-color: pink;
-    text-align: center;
-    width: 67%;
-    height: 40%;
-    margin-left: 16.5%;
-    margin-right: 16.5%;
-    margin-top: 15%;
-    margin-bottom: 10px;
-    padding: 30px;
+    flex-direction: column;
+    width: 67dvh;
+    height: 40dvh;
+    padding: 15px;
+    align-content: center;
+    align-items: center;
+    scroll-margin-left: 20px;
+    scroll-margin-right: 20px;
     border: 2px dashed black;
+    display: flex;
+    justify-content: normal;
+    margin: 20px auto;
+    font-family: 'Copperplate Gothic', sans-serif;
+    margin-inline: auto;
 }
 
 .go-button {
